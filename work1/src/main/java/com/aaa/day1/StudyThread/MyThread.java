@@ -1,4 +1,4 @@
-package com.aaa.StudyThread;
+package com.aaa.day1.StudyThread;
 
 public class MyThread extends Thread {
     public MyThread(String name){

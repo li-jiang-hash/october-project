@@ -1,8 +1,8 @@
 package com.aaa;
 
-import com.aaa.StudyThread.MyRunnable;
-import com.aaa.StudyThread.MyThread;
-import com.aaa.StudyThread.SunCallable;
+import com.aaa.day1.StudyThread.MyRunnable;
+import com.aaa.day1.StudyThread.MyThread;
+import com.aaa.day1.StudyThread.SunCallable;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
