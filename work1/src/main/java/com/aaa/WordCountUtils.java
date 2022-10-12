@@ -1,5 +1,6 @@
 package com.aaa;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,6 +16,8 @@ public class WordCountUtils {
         Map<String, Integer> resultMap = new HashMap<>();
 
         String[] wordArray = words.split(" ");
+//        long count = Arrays.stream(wordArray).filter(str->str.equals(str)).count();
+//        System.out.println("count = " + count);
         for (String word : wordArray) {
             if (resultMap.containsKey(word)) {
                 Integer count = resultMap.get(word);

@@ -1,8 +1,6 @@
 package com.aaa.day3Net;
 
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -28,7 +26,8 @@ public class Server {
             throw new RuntimeException(e);
         } finally {
             try {
-                serverSocket.close();
+                if (serverSocket != null)
+                    serverSocket.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

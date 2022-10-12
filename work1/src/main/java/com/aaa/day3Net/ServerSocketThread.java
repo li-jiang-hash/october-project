@@ -33,7 +33,8 @@ public class ServerSocketThread extends Thread{
                 System.out.println("\033[3"+colorRandom+"m"+"["+socket.getRemoteSocketAddress()+"]说:"+line+"\033[m");
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+//            throw new RuntimeException(e);
         }
     }
 }
